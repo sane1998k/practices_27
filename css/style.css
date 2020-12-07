@@ -1,36 +1,29 @@
 @charset "UTF-8";
 /*Обнуление*/
+@import url("https://fonts.googleapis.com/css?family=PT+Sans&display=swap");
 * {
   padding: 0;
   margin: 0;
   border: 0;
 }
 
-*,
-*:before,
-*:after {
+*, *:before, *:after {
   box-sizing: border-box;
 }
 
-:focus,
-:active {
+:focus, :active {
   outline: none;
 }
 
-a:focus,
-a:active {
+a:focus, a:active {
   outline: none;
 }
 
-nav,
-footer,
-header,
-aside {
+nav, footer, header, aside {
   display: block;
 }
 
-html,
-body {
+html, body {
   height: 100%;
   width: 100%;
   font-size: 100%;
@@ -41,9 +34,7 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
-input,
-button,
-textarea {
+input, button, textarea {
   font-family: inherit;
 }
 
@@ -60,8 +51,7 @@ button::-moz-focus-inner {
   border: 0;
 }
 
-a,
-a:visited {
+a, a:visited {
   text-decoration: none;
 }
 
@@ -77,20 +67,100 @@ img {
   vertical-align: top;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-size: inherit;
   font-weight: inherit;
 }
 
 /*--------------------*/
+header {
+  padding: 29px 0 0 35px;
+}
 
 .container {
-  max-width: 970px;
+  max-width: 920px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+}
+.header-top .header-top-lang {
+  display: flex;
+}
+.header-top .header-top-lang a {
+  display: block;
+  height: 19px;
+  padding: 5px;
+  font-family: Bebas;
+  font-size: 10px;
+  line-height: 19px;
+  color: #000;
+  letter-spacing: 1px;
+  padding: 0 4px;
+  margin: 0 10px 0 0;
+}
+.header-top .header-top-lang a.active {
+  background-color: #000;
+  color: #fff;
+}
+.header-top .header-top__link {
+  color: #000;
+  font-family: "AkzidenzGroteskBQCondensedBold";
+  font-size: 15px;
+  line-height: 25px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  letter-spacing: 1px;
+}
+
+.header-bottom {
+  display: flex;
+  align-items: center;
+}
+.header-bottom .header-bottom__column {
+  flex: 33.333%;
+}
+.header-bottom .header-bottom__column .header-bottom-menu-list {
+  display: flex;
+  justify-content: space-between;
+}
+.header-bottom .header-bottom__column .header-bottom-menu-list li a {
+  color: #000000;
+  font-family: "AkzidenzGroteskBQCondensedBold";
+  font-size: 15px;
+  line-height: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+.header-bottom .header-bottom__column .header-logo {
+  display: block;
+  text-align: center;
+}
+.header-bottom .header-bottom__column .header-logo .header-logo__text {
+  display: block;
+  color: #000;
+  font-family: Bebas;
+  font-size: 8px;
+  line-height: 25px;
+  text-transform: uppercase;
+  /* Text style for "NY" */
+  letter-spacing: 8px;
+}
+
+@font-face {
+  font-family: "AkzidenzGroteskBQCondensedBold";
+  src: url("../fonts/AkzidenzGroteskBQCondensedBold.eot");
+  src: local("☺"), url("../fonts/AkzidenzGroteskBQCondensedBold.woff") format("woff"), url("../fonts/AkzidenzGroteskBQCondensedBold.ttf") format("truetype"), url("../fonts/AkzidenzGroteskBQCondensedBold.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bebas";
+  src: url("../fonts/BebasNeueRegular.eot");
+  src: local("☺"), url("../fonts/BebasNeueRegular.woff") format("woff"), url("../fonts/BebasNeueRegular.ttf") format("truetype"), url("../fonts/BebasNeueRegular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
 }
